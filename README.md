@@ -70,6 +70,7 @@ Ejemplo Output con archivo Sample de Twitch:
 
 Ejemplo Query generada: 
 ``` Ejemplo_Query_generada.txt ```
+![image](https://github.com/Cesarandres91/DQ_Perfilamiento_de_datos_en_Bigquery/assets/102868086/846bcea7-572f-4f27-be47-d41e990c5c3f)
 
 PD: Las consultas están particionadas en varios archivos en caso de que la cantidad de campos sea alta, esto es basado solo en mi propia experiencia en cuanto a rendimiento, manejo de recursos y control de limites que establece BigQuery, pero puedes modificarlo directamente en el código en caso de que no lo necesites.
 
