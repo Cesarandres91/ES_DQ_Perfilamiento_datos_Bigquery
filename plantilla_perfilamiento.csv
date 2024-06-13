@@ -1,0 +1,8 @@
+CAMPO,TIPO,PARTICION,TABLA,Fecha_desde,Fecha_hasta
+viewer_count,INTEGER,_PARTITIONTIME,twitch_data.streams,2021-01-01,2021-12-31
+viewer_suscribers,INTEGER,_PARTITIONTIME,twitch_data.streams,2021-01-01,2021-12-31
+stream_language,STRING,_PARTITIONTIME,twitch_data.streams,2021-01-01,2021-12-31
+category,STRING,_PARTITIONTIME,twitch_data.streams,2021-01-01,2021-12-31
+stream_title,STRING,_PARTITIONTIME,twitch_data.streams,2021-01-01,2021-12-31
+broadcaster_name,STRING,_PARTITIONTIME,twitch_data.streams,2021-01-01,2021-12-31
+_PARTITIONTIME,DATE,_PARTITIONTIME,twitch_data.streams,2021-01-01,2021-12-31
