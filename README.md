@@ -29,7 +29,7 @@ Asegúrate de tener estos archivos en tu directorio de trabajo:
 - `perfilamiento_proyecto_dq_desktop.py`:  Este archivo contiene todo el código necesario para ejecutar las consultas de perfilamiento en el escritorio con Python.
 - `perfilamiento_proyecto_dq_gcolab.py`:  Este archivo contiene todo el código necesario para ejecutar las consultas de perfilamiento en google colab.
 - `plantilla_perfilamiento.csv`: Una plantilla CSV que define el esquema de los datos a analizar.
-- 
+  
 - ## Uso
 - Modifica el archivo `perfilamiento_datos.csv` con los campos y parámetros deseados para el perfilamiento.
 - Ejecuta el script `perfilamiento_proyecto_dq.py` para generar las consultas SQL
@@ -46,6 +46,10 @@ Asegúrate de tener estos archivos en tu directorio de trabajo:
    - **TABLA**: Nombre de la tabla donde se encuentra el campo.
    - **Fecha_desde**: Fecha de inicio para el filtro de la consulta.
    - **Fecha_hasta**: Fecha de fin para el filtro de la consulta.
+
+     Ejemplo del archivo:
+     ![image](https://github.com/Cesarandres91/DQ_Perfilamiento_de_datos_en_Bigquery/assets/102868086/8fcbe9e9-3378-48cb-bdcc-04038de2ae87)
+
 
 ### Paso 2: Configuración del Entorno
 
