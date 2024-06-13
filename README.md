@@ -66,6 +66,8 @@ Asegúrate de que tu entorno Python está configurado correctamente, siempre pue
 El script leerá la plantilla, generará las consultas SQL en un archivo de texto que podrás copiar y pegar en BigQuery.
 Ejemplo Output con archivo Sample de Twitch:
 
+![image](https://github.com/Cesarandres91/DQ_Perfilamiento_de_datos_en_Bigquery/assets/102868086/a87a847e-3a5a-44b0-ab85-20997af8381a)
+
 ![image](https://github.com/Cesarandres91/DQ_Perfilamiento_de_datos_en_Bigquery/assets/102868086/0121ddfc-0de8-41c9-a449-9ea17c2589eb)
 
 Ejemplo Query generada: 
