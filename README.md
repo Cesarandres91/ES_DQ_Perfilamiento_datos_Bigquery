@@ -80,8 +80,10 @@ Analiza los datos para entender mejor la calidad y estructura de los datos en tu
 
 ![image](https://github.com/Cesarandres91/DQ_Perfilamiento_de_datos_en_Bigquery/assets/102868086/0121ddfc-0de8-41c9-a449-9ea17c2589eb)
 
+### Visualización:
 Ya con estos datos, solo queda generar las gráficas con nuestra herramientas de inteligencia de negocio preferida o plataforma de visualización de datos,
-en este caso para no depender de ninguna librería las generé utilizando python, con estas librerías:
+generalmente en las compañías utilizamos Tableau o Power BI para generar tableros de control utilizando como input la tabla final,
+pero para este caso y no depender de ninguna licencia generé las gráficas solu utilizando python, con estas librerías:
 ```
 import matplotlib.pyplot as plt
 import seaborn as sns
