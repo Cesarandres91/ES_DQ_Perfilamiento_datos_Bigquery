@@ -26,9 +26,10 @@ Invito a todos los interesados en mejorar la calidad de sus datos y eficientizar
 ## 📁 Estructura de Archivos
 
 Asegúrate de tener estos archivos en tu directorio de trabajo:
-- `perfilamiento_datos.csv`: Una plantilla CSV que define el esquema de los datos a analizar.
-- `perfilamiento_proyecto_dq.py`: Este archivo contiene todo el código necesario para ejecutar las consultas de perfilamiento.
-
+- `perfilamiento_proyecto_dq_desktop.py`:  Este archivo contiene todo el código necesario para ejecutar las consultas de perfilamiento en el escritorio con Python.
+- `perfilamiento_proyecto_dq_gcolab.py`:  Este archivo contiene todo el código necesario para ejecutar las consultas de perfilamiento en google colab.
+- `plantilla_perfilamiento.csv`: Una plantilla CSV que define el esquema de los datos a analizar.
+- 
 - ## Uso
 - Modifica el archivo `perfilamiento_datos.csv` con los campos y parámetros deseados para el perfilamiento.
 - Ejecuta el script `perfilamiento_proyecto_dq.py` para generar las consultas SQL
