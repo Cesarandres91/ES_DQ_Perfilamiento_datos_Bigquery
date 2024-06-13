@@ -1,0 +1,1 @@
+# DQ_Perfilamiento_de_datos_en_Bigquery
