@@ -10,7 +10,7 @@ from datetime import datetime
 now = datetime.now().strftime("%Y%m%d_%H%M%S")
 
 # Opción 1: para cargar desde un archivo CSV
-df = pd.read_csv("C:\Users\cesar\OneDrive\Escritorio\jOB\Twitch_Streams_Sample_Data.csv", header=0)
+df = pd.read_csv('plantilla_perfilamiento.csv', header=0)
 
 # Opción 2: para cargar desde un archivo Excel
 # df = pd.read_excel('perfilamiento_datos.xlsx', index_col=0, header=0)
