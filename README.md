@@ -23,7 +23,54 @@ Invito a todos los interesados en mejorar la calidad de sus datos y eficientizar
 
 ## :sparkles: Gracias por su atención y espero poder conectar y colaborar con muchos de ustedes en el futuro próximo. :sparkles:
 
+## 📁 Estructura de Archivos
 
+Asegúrate de tener estos archivos en tu directorio de trabajo:
+- `perfilamiento_datos.csv`: Una plantilla CSV que define el esquema de los datos a analizar.
+- `perfilamiento_proyecto_dq.py`: Este archivo contiene todo el código necesario para ejecutar las consultas de perfilamiento.
+
+- ## Uso
+- Modifica el archivo `perfilamiento_datos.csv` con los campos y parámetros deseados para el perfilamiento.
+- Ejecuta el script `perfilamiento_proyecto_dq.py` para generar las consultas SQL
+
+## 🗺️ Guía Paso a Paso
+
+### Paso 1: Preparar la Plantilla de Datos
+
+1. Abre el archivo `perfilamiento_datos.csv` en un editor de texto o en una hoja de cálculo.
+2. Edita las columnas según los datos que necesitas perfilar:
+   - **CAMPO**: Nombre del campo a analizar.
+   - **TIPO**: Tipo de dato del campo (e.g., STRING, INTEGER).
+   - **PARTICION**: Nombre de la columna de partición.
+   - **TABLA**: Nombre de la tabla donde se encuentra el campo.
+   - **Fecha_desde**: Fecha de inicio para el filtro de la consulta.
+   - **Fecha_hasta**: Fecha de fin para el filtro de la consulta.
+
+### Paso 2: Configuración del Entorno
+
+Asegúrate de que tu entorno Python está configurado correctamente, siempre puedes ejecutarlo en googlecolab para evitar quebraderos de cabeza y verifica que tienes las credenciales necesarias para acceder a Google BigQuery.
+
+### Paso 3: Ejecutar el Script
+
+1. Abre tu terminal o línea de comandos.
+2. Navega hasta el directorio donde se encuentran los archivos `perfilamiento_proyecto_dq.py` y `perfilamiento_datos.csv`.
+3. Ejecuta el siguiente comando:
+   ```bash
+    python perfilamiento_proyecto_dq.py
+   ```
+El script leerá la plantilla, generará las consultas SQL en un archivo de texto que podrás copiar y pegar en BigQuery.
+
+PD: Las consultas están particionadas en varios archivos en caso de que la cantidad de campos sea alta, esto es basado solo en mi propia experiencia en cuanto a rendimiento, manejo de recursos y control de limites que establece BigQuery, pero puedes modificarlo directamente en el código en caso de que no lo necesites.
+
+### Paso 4: Revisar los Resultados
+Revisa los resultados de las consultas que se mostrarán en la salida estándar o en los archivos de salida especificados en el script.
+Analiza los datos para entender mejor la calidad y estructura de los datos en tu base de datos BigQuery.
+
+🧐 Solución de Problemas
+Si encuentras errores durante la ejecución, verifica lo siguiente:
+Que las credenciales de BigQuery están configuradas correctamente.
+Que los nombres de las columnas en perfilamiento_datos.csv coinciden exactamente con los de la base de datos.
+Que tienes permisos suficientes en BigQuery para ejecutar consultas y acceder a las tablas especificadas.
 
 ## Características
 - **Generación Automática de Consultas SQL**: Scripts de Python leen especificaciones desde una hoja de Excel y generan consultas SQL.
@@ -50,16 +97,6 @@ Invito a todos los interesados en mejorar la calidad de sus datos y eficientizar
   export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/credentials.json"
   ```
 
-## Uso
-- Modifica el archivo `crear_query.xlsx` con las reglas y parámetros deseados para el perfilamiento.
-- Ejecuta el script `profile_data.py` para generar y ejecutar las consultas SQL:
-
-## Estructura del Repositorio
-- `README.md`: Este archivo.
-- `sql/`: Directorio que almacena scripts SQL generados y plantillas.
-- `src/`: Código fuente Python para la generación de consultas.
-- `data/`: Ejemplos de archivos Excel con configuraciones de perfilamiento.
-- `docs/`: Documentación adicional y guías de uso.
 
 ## Contribución
 Para contribuir al proyecto, por favor sigue los siguientes pasos:
