@@ -66,10 +66,6 @@ Asegúrate de que tu entorno Python está configurado correctamente, siempre pue
 El script leerá la plantilla, generará las consultas SQL en un archivo de texto que podrás copiar y pegar en BigQuery.
 Ejemplo Output con archivo Sample de Twitch:
 
-![image](https://github.com/Cesarandres91/DQ_Perfilamiento_de_datos_en_Bigquery/assets/102868086/a87a847e-3a5a-44b0-ab85-20997af8381a)
-
-![image](https://github.com/Cesarandres91/DQ_Perfilamiento_de_datos_en_Bigquery/assets/102868086/0121ddfc-0de8-41c9-a449-9ea17c2589eb)
-
 Ejemplo Query generada: 
 ``` Ejemplo_Query_generada.txt ```
 ![image](https://github.com/Cesarandres91/DQ_Perfilamiento_de_datos_en_Bigquery/assets/102868086/846bcea7-572f-4f27-be47-d41e990c5c3f)
@@ -79,6 +75,27 @@ PD: Las consultas están particionadas en varios archivos en caso de que la cant
 ### Paso 4: Revisar los Resultados
 Revisa los resultados de las consultas que se mostrarán en la salida estándar o en los archivos de salida especificados en el script.
 Analiza los datos para entender mejor la calidad y estructura de los datos en tu base de datos BigQuery.
+
+![image](https://github.com/Cesarandres91/DQ_Perfilamiento_de_datos_en_Bigquery/assets/102868086/a87a847e-3a5a-44b0-ab85-20997af8381a)
+
+![image](https://github.com/Cesarandres91/DQ_Perfilamiento_de_datos_en_Bigquery/assets/102868086/0121ddfc-0de8-41c9-a449-9ea17c2589eb)
+
+Ya con estos datos, solo queda generar las gráficas con nuestra herramientas de inteligencia de negocio preferida o plataforma de visualización de datos,
+en este caso para no depender de ninguna librería las generé utilizando python, con estas librerías:
+```
+import matplotlib.pyplot as plt
+import seaborn as sns
+# Configurar estilo de Seaborn
+sns.set(style="whitegrid")
+ ```
+![Nulos](https://github.com/Cesarandres91/DQ_Perfilamiento_de_datos_en_Bigquery/assets/102868086/60a98605-165d-4d1a-87d0-7d6584313fb9)
+
+![Distintos](https://github.com/Cesarandres91/DQ_Perfilamiento_de_datos_en_Bigquery/assets/102868086/4fad40d0-29c3-4a22-8047-16ecae79c166)
+
+![Largo_maximo](https://github.com/Cesarandres91/DQ_Perfilamiento_de_datos_en_Bigquery/assets/102868086/2888a304-eccc-41dc-ab4e-78890a18537d)
+
+![Largo_minimo](https://github.com/Cesarandres91/DQ_Perfilamiento_de_datos_en_Bigquery/assets/102868086/a735da08-c44f-41e0-8617-9fc2e050acc8)
+
 
 🧐 Solución de Problemas
 Si encuentras errores durante la ejecución, verifica lo siguiente:
