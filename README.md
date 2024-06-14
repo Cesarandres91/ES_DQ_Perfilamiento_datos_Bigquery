@@ -22,16 +22,13 @@ Te será muy útil si se eres :
 # Sistema de Perfilamiento de Datos para BigQuery
 
 ## Descripción del Proyecto
-Este repositorio contiene un marco de trabajo automatizado diseñado para crear perfilamiento de datos de tablas almacenadas en Google BigQuery (puede ser aplicable también a Athena de AWS con algunas modificaciones).
-
-## :file_folder: Flexibilidad en la Carga de Datos
-Esta herramienta facilita el perfilamiento de datos mediante una serie de cargas de datos flexibles y personalizables desde diversas fuentes como archivos CSV, Excel, y directamente desde Google Sheets. Esta capacidad de adaptarse a múltiples formatos de entrada es fundamental en entornos dinámicos.
+Este repositorio contiene un marco de trabajo automatizado diseñado para crear perfilamiento de datos de tablas almacenadas en Google BigQuery de manera masiva, completa, rápida y eficiente (puede ser aplicable también a Athena de AWS con algunas modificaciones).
 
 ## :mag_right: Análisis Detallado y Calidad de datos
-Además, el código incorpora funcionalidades avanzadas para generar consultas SQL detalladas y específicas que se ejecutan en BigQuery. Estas consultas no solo contabilizan registros totales y nulos, sino que también evalúan la integridad y la distribución de los datos, incluyendo la identificación de valores extremos y la realización de cálculos estadísticos como promedios y conteos condicionales. Esto es esencial para garantizar que los datos no solo sean precisos, sino también útiles para tomar decisiones informadas.
+El proyecto incorpora funcionalidades avanzadas para generar consultas SQL detalladas y específicas que se ejecutan en BigQuery. Estas consultas no solo contabilizan registros totales y nulos, sino que también evalúan la integridad y la distribución de los datos, incluyendo la identificación de valores extremos y la realización de cálculos estadísticos como promedios y conteos condicionales. Esto es esencial para garantizar que los datos no solo sean precisos, sino también útiles para tomar decisiones informadas e identifica posibles outliers.
 
-## :hammer_and_wrench: Manejo Eficiente
-Una de las características más innovadoras de este código es su capacidad para automatizar el desglose de grandes conjuntos de datos en múltiples partes, facilitando así su manejo y análisis.
+## :hammer_and_wrench: Flexibilidad y Manejo Eficiente
+Los datos pueden cargarse de fuentes diferentes mientas cumplan el formato del template como archivos CSV, Excel o googlesheet, además su capacidad para automatizar el desglose de grandes conjuntos de datos en múltiples partes facilita su manejo y análisis para mejorar el rendimiento, manejo de recursos y control de limites que establece BigQuery.
 
 ## :handshake: Invitación a Colaborar
 Invito a todos los interesados en mejorar la calidad de sus datos y eficientizar sus procesos analíticos a conectarse conmigo para explorar posibles colaboraciones y oportunidades profesionales. Juntos, podemos transformar la manera en que interactuamos con los datos y liderar la próxima ola de innovaciones en la analítica de datos.
@@ -85,7 +82,7 @@ Ejemplo Query generada:
 ``` Ejemplo_Query_generada.txt ```
 ![image](https://github.com/Cesarandres91/DQ_Perfilamiento_de_datos_en_Bigquery/assets/102868086/846bcea7-572f-4f27-be47-d41e990c5c3f)
 
-PD: Las consultas están particionadas en varios archivos en caso de que la cantidad de campos sea alta, esto es basado solo en mi propia experiencia en cuanto a rendimiento, manejo de recursos y control de limites que establece BigQuery, pero puedes modificarlo directamente en el código en caso de que no lo necesites.
+PD: Las consultas están particionadas en varios archivos en caso de que la cantidad de campos sea alta, para mejorar el rendimiento, manejo de recursos y control de limites que establece BigQuery, pero puedes modificarlo directamente en el código en caso de que no lo necesites.
 
 ### Paso 4: Revisar los Resultados
 Revisa los resultados de las consultas que se mostrarán en la salida estándar o en los archivos de salida especificados en el script.
