@@ -1,3 +1,22 @@
+# Data Quality - Perfilamiento de datos (Data Profiling)
+
+- 👋 Hi, I’m @Cesarandres91
+- 👀 I’m interested in data quality, data science and data governance.
+- 🌱 I’m currently learning data science.
+- 💞️ I’m looking to collaborate on data governance and data quality proyects.
+- 📫 How to reach me https://www.linkedin.com/in/andreschile/
+
+Te será muy útil si se eres : 
+Científico de Datos (Data Scientist)
+Ingeniero de Datos (Data Engineer)
+Analista de Datos (Data Analyst)
+Administrador de Bases de Datos (Database Administrator, DBA)
+Arquitecto de Datos (Data Architect)
+Ingeniero de Calidad de Datos (Data Quality Engineer)
+Ingeniero de BI (Business Intelligence Engineer)
+Analista de BI (Business Intelligence Analyst)
+Consultor de Datos (Data Consultant)
+
 # Sistema de Perfilamiento de Datos para BigQuery
 
 ## Descripción del Proyecto
