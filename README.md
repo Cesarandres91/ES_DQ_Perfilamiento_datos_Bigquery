@@ -7,15 +7,17 @@
 - 📫 How to reach me https://www.linkedin.com/in/andreschile/
 
 Te será muy útil si se eres : 
-Científico de Datos (Data Scientist)
-Ingeniero de Datos (Data Engineer)
-Analista de Datos (Data Analyst)
-Administrador de Bases de Datos (Database Administrator, DBA)
-Arquitecto de Datos (Data Architect)
-Ingeniero de Calidad de Datos (Data Quality Engineer)
-Ingeniero de BI (Business Intelligence Engineer)
-Analista de BI (Business Intelligence Analyst)
-Consultor de Datos (Data Consultant)
+| Position                                                         |
+|---------------------------------------------------------------|
+| 🧑‍🔬 Científico de Datos (Data Scientist)                  |
+| 👷‍♂️ Ingeniero de Datos (Data Engineer)                    |
+| 📊 Analista de Datos (Data Analyst)                          |
+| 🗄️ Administrador de Bases de Datos (Database Administrator)  |
+| 🏗️ Arquitecto de Datos (Data Architect)                    |
+| 🛠️ Ingeniero de Calidad de Datos (Data Quality Engineer)   |
+| 💡 Ingeniero de BI (Business Intelligence Engineer)          |
+| 📈 Analista de BI (Business Intelligence Analyst)            |
+| 💼 Consultor de Datos (Data Consultant)                     |
 
 # Sistema de Perfilamiento de Datos para BigQuery
 
