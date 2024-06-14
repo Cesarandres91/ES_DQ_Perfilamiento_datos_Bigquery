@@ -73,10 +73,15 @@ Asegúrate de que tu entorno Python está configurado correctamente, siempre pue
 2. Navega hasta el directorio donde se encuentran los archivos `perfilamiento_proyecto_dq.py` y `perfilamiento_datos.csv`.
 3. Ejecuta el siguiente comando:
    ```bash
-    python perfilamiento_proyecto_dq.py
+    perfilamiento_proyecto_dq_desktop.py
    ```
-El script leerá la plantilla, generará las consultas SQL en un archivo de texto que podrás copiar y pegar en BigQuery.
-Ejemplo Output con archivo Sample de Twitch:
+   o desde google colab puedes usar el otro código
+   
+   ```bash
+   perfilamiento_proyecto_dq_gcolab.py
+   ```
+   
+El script leerá la plantilla (recuerda ajustar el directorio), generará las consultas SQL en un archivo de texto que podrás copiar y pegar en BigQuery.
 
 Ejemplo Query generada: 
 ``` Ejemplo_Query_generada.txt ```
